@@ -1,0 +1,47 @@
+body {
+    scroll-behavior: smooth;
+    align-self: center;
+    margin: 30%;
+}
+.container {
+    width: 40%;
+    height: 100%;
+    padding: 1.5vh;
+    background-color: rgb(74, 175, 156);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: .5vh;
+    row-gap: .5vh;
+}
+
+button {
+    height: 7vh;
+    background-color: rgb(230, 157, 83);
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: all 200ms step-start;
+    font-weight: 400;
+    font-size: larger;
+}
+
+button:hover {
+    cursor: cell;
+    background-color: rgb(226, 196, 159);
+}
+
+.display { /* Untuk bagian display resultnya */
+    background-color: antiquewhite;
+    border-radius: 10px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding: 3vh 1vh;
+    margin: .5vh;
+    text-align: right;
+    font-size: large;
+}
+
+.special-span {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
